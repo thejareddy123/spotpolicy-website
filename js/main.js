@@ -17,28 +17,26 @@
      COMPANY LIST for carousel
   ────────────────────────────────────────────── */
   const COMPANIES = [
-    { name: 'HDFC Ergo',       icon: 'fa-building'       },
-    { name: 'ICICI Lombard',   icon: 'fa-landmark'       },
-    { name: 'New India',       icon: 'fa-flag'           },
-    { name: 'Bajaj Allianz',   icon: 'fa-shield-halved'  },
-    { name: 'Tata AIG',        icon: 'fa-circle-check'   },
-    { name: 'United India',    icon: 'fa-star'           },
-    { name: 'Oriental',        icon: 'fa-compass'        },
-    { name: 'Reliance GI',     icon: 'fa-bolt'           },
-    { name: 'Kotak GI',        icon: 'fa-gem'            },
-    { name: 'Digit Ins.',      icon: 'fa-d'              },
-    { name: 'Acko',            icon: 'fa-a'              },
-    { name: 'Iffco Tokio',     icon: 'fa-leaf'           },
-    { name: 'Royal Sundaram',  icon: 'fa-sun'            },
-    { name: 'National Ins.',   icon: 'fa-building-columns'},
-    { name: 'Cholamandalam',   icon: 'fa-c'              },
-    { name: 'Future Generali', icon: 'fa-rocket'         },
-    { name: 'Liberty GI',      icon: 'fa-person-walking' },
-    { name: 'Shriram GI',      icon: 'fa-s'              },
-    { name: 'Universal Sompo', icon: 'fa-globe'          },
-    { name: 'SBI General',     icon: 'fa-piggy-bank'     },
-    { name: 'Magma HDI',       icon: 'fa-m'              },
-    { name: '+ 1 More',        icon: 'fa-plus'           },
+    { name: 'Bajaj Allianz',   logo: '/images/logo.jpeg' },
+    { name: 'ICICI Lombard',   logo: '/images/logo (2).jpeg'},
+    { name: 'New India',       logo: '/images/logo (3).jpeg'},
+    { name: 'Bajaj Allianz',   logo: '/images/logo (4).jpeg'},
+    { name: 'Tata AIG',        logo: '/images/logo (5).jpeg'},
+    { name: 'United India',    logo: '/images/logo (6).jpeg'},
+    { name: 'Oriental',        logo: '/images/logo (7).jpeg'},
+    { name: 'Reliance GI',     logo: '/images/logo (8).jpeg'},
+    { name: 'Kotak GI',        logo: '/images/logo (9).jpeg'},
+    { name: 'Digit Ins.',      logo: '/images/logo (10).jpeg'},
+    { name: 'Acko',            logo: '/images/logo (11).jpeg'},
+    { name: 'Iffco Tokio',     logo: '/images/logo (12).jpeg'},
+    { name: 'Royal Sundaram',  logo: '/images/logo (13).jpeg'},
+    { name: 'National Ins.',   logo: '/images/logo (14).jpeg'},
+    { name: 'Cholamandalam',   logo: '/images/logo (15).jpeg'},
+    { name: 'Future Generali', logo: '/images/logo (16).jpeg'},
+    { name: 'Liberty GI',      logo: '/images/logo (17).jpeg'},
+    { name: 'Shriram GI',      logo: '/images/logo (18).jpeg'},
+    { name: 'Universal Sompo', logo: '/images/logo (19).jpeg'},
+    { name: 'SBI General',     logo: '/images/logo (20).jpeg'},
   ];
 
   /* ──────────────────────────────────────────────
@@ -57,8 +55,7 @@
     function makeLogoHTML(c) {
       return `<div class="company-logo" title="${c.name}">
         <div class="company-logo-inner">
-          <i class="fas ${c.icon}"></i>
-          <span>${c.name}</span>
+          <img src="${c.logo}" alt="${c.name}" class="logo-img">
         </div>
       </div>`;
     }

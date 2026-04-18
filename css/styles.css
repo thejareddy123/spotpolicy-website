@@ -1141,3 +1141,8 @@ a  { text-decoration: none; color: inherit; }
   .floating-btns { bottom: 20px; right: 16px; }
   .float-btn { width: 52px; height: 52px; }
 }
+.logo-img {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
